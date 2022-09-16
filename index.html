@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Library Website CST </title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <div class="header-1">
+
+        <a href="#" class="logo"> <i class="fas fa-book"></i> E Library CST </a>
+
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-heart"></a>
+            <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
+            <!-- later it can be used as a cart -->
+            <div id="download" class="fas fa-download"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+    </div>
+
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#featured">featured</a>
+            <a href="#arrivals">arrivals</a>
+            <a href="#reviews">reviews</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- bottom navbar  -->
+
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#featured" class="fas fa-list"></a>
+    <a href="#arrivals" class="fas fa-tags"></a>
+    <a href="#reviews" class="fas fa-comments"></a>
+    <a href="#blogs" class="fas fa-blog"></a>
+</nav>
+
+<!-- login form  -->
+
+<div class="login-form-container">
+
+    <div id="close-login-btn" class="fas fa-times"></div>
+
+    <form action="">
+        <h3>sign in</h3>
+        <span>username</span>
+        <input type="email" name="" class="box" placeholder="Enter Your Email" id="">
+        <span>password</span>
+        <input type="password" name="" class="box" placeholder="Enter Your Password" id="">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me"> remember me</label>
+        </div>
+        <input type="submit" value="sign in" class="btn">
+        <p>forget password ? <a href="#">click here</a></p>
+        <p>don't have an account ? <a href="#">create one</a></p>
+    </form>
+
+</div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="row">
+
+        <div class="content">
+            <h3>Computer Science Books</h3>
+            <p>Specially made for the Computer Science students of Technique Polytechnic Institute 
+                free e-books for limited amount of time for the computer science students 
+            </p>
+            <a href="#featured" class="btn">read now</a>
+        </div>
+
+        <div class="swiper books-slider">
+            <div class="swiper-wrapper">
+                <a href="#featured" class="swiper-slide"><img src="image2/dbms.webp" alt="" class="shade"></a>
+                <a href="#featured" class="swiper-slide"><img src="image2/operating_system.webp" alt="" class="shade"></a>
+                <a href="#featured" class="swiper-slide"><img src="image2/networks.webp" alt="" class="shade"></a>
+                <a href="#featured" class="swiper-slide"><img src="image2/java.webp" alt="" class="shade"></a>
+                <a href="#featured" class="swiper-slide"><img src="image2/sft_eng.webp" alt="" class="shade"></a>
+            </div>
+            <img src="image/stand.png" class="stand" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- home section ends  -->
+
+<!-- icons section starts  -->
+
+<section class="icons-container">
+
+    <div class="icons">
+        <i class="fas fa-shipping-fast"></i>
+        <div class="content">
+            <h3>free shipping</h3>
+            <p>order over  ₹1000</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-lock"></i>
+        <div class="content">
+            <h3>secure payment</h3>
+            <p>100% secure payment</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-redo-alt"></i>
+        <div class="content">
+            <h3>easy returns</h3>
+            <p>10 days returns</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-headset"></i>
+        <div class="content">
+            <h3>24/7 support</h3>
+            <p>call us anytime</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- icons section ends -->
+
+<!-- featured section starts  -->
+
+<section class="featured" id="featured">
+
+    <h1 class="heading"> <span>featured books</span> </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <!-- <a href="pdf_books/Python Programming.pdf" target="blank" class="fas fa-eye"></a> -->
+                </div>
+                <div class="image">
+                    <img src="image2/python.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>Python Programming</h3>
+                    <div class="price"> FREE <span> ₹1199</span></div>
+                    <a href="pdf_books/Python Programming.pdf" target="blank" class="btn">Read Book</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <!-- <a href="pdf_books/Let Us C - Yashwant Kanetkar.pdf" target="blank" class="fas fa-eye"></a> -->
+                </div>
+                <div class="image">
+                    <img src="image2/c.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>C Programming</h3>
+                    <div class="price"> FREE <span> ₹799</span></div>
+                    <a href="pdf_books/Let Us C - Yashwant Kanetkar.pdf" target="blank" class="btn">Read Book</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <!-- <a href="pdf_books/c++.pdf" target="blank" class="fas fa-eye"></a> -->
+                </div>
+                <div class="image">
+                    <img src="image2/c++.jpg" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>C++ Programming</h3>
+                    <div class="price"> FREE <span> ₹999</span></div>
+                    <a href="pdf_books/c++.pdf" target="blank" class="btn">Read Book</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <!-- <a href="pdf_books/java.pdf" target="blank" class="fas fa-eye"></a> -->
+                </div>
+                <div class="image">
+                    <img src="image2/java.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>JAVA Programming</h3>
+                    <div class="price"> FREE <span> ₹1999</span></div>
+                    <a href="pdf_books/java.pdf" target="blank" class="btn">Read Book</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <!-- <a href="pdf_books/Data-Structures-Using-C-2nd-edition.pdf" target="blank" class="fas fa-eye"></a> -->
+                </div>
+                <div class="image">
+                    <img src="image2/ds.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>Data Structures</h3>
+                    <div class="price"> FREE <span> ₹999</span></div>
+                    <a href="pdf_books/Data-Structures-Using-C-2nd-edition.pdf" target="blank" class="btn">Read Book</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <!-- <a href="pdf_books/Introduction_to_Algorithms_Third_Edition_(2009).pdf" target="blank" class="fas fa-eye"></a> -->
+                </div>
+                <div class="image">
+                    <img src="image2/algo.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>Introduction to Algorithms</h3>
+                    <div class="price"> FREE <span> ₹2499</span></div>
+                    <a href="pdf_books/Introduction_to_Algorithms_Third_Edition_(2009).pdf" target="blank" class="btn">Read Book</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <!-- <a href="pdf_books/Operating System Concepts (Abraham Silberschatz, Greg Gagne etc.) (z-lib.org).pdf" target="blank" class="fas fa-eye"></a> -->
+                </div>
+                <div class="image">
+                    <img src="image2/operating_system.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>Operating System</h3>
+                    <div class="price"> FREE <span> ₹1199</span></div>
+                    <a href="pdf_books/Operating System Concepts (Abraham Silberschatz, Greg Gagne etc.) (z-lib.org).pdf" target="blank" class="btn">Read Book</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <!-- <a href="pdf_books/Database System Concepts 6th edition _  Henry F Korth Abraham Silberschatz, S Sudharshan.pdf" target="blank" class="fas fa-eye"></a> -->
+                </div>
+                <div class="image">
+                    <img src="image2/dbms.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>DataBase System Concept</h3>
+                    <div class="price"> FREE <span> ₹1499</span></div>
+                    <a href="pdf_books/Database System Concepts 6th edition _  Henry F Korth Abraham Silberschatz, S Sudharshan.pdf" target="blank" class="btn">Read Book</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <!-- <a href="pdf_books/Software Engineering (Ian Sommerville) (z-lib.org).pdf" target="blank" class="fas fa-eye"></a> -->
+                </div>
+                <div class="image">
+                    <img src="image2/sft_eng.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>Software Engineering</h3>
+                    <div class="price"> FREE <span> ₹999</span></div>
+                    <a href="pdf_books/Software Engineering (Ian Sommerville) (z-lib.org).pdf" target="blank" class="btn">Read Book</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <!-- <a href="pdf_books/Introduction to Computer and Network Security  Navigating Shades of Gray (Brooks, Richard R.) (z-lib.org).pdf" target="blank" class="fas fa-eye"></a> -->
+                </div>
+                <div class="image">
+                    <img src="image2/networks.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>network security</h3>
+                    <div class="price"> FREE <span> ₹1199</span></div>
+                    <a href="pdf_books/Introduction to Computer and Network Security  Navigating Shades of Gray (Brooks, Richard R.) (z-lib.org).pdf" target="blank" class="btn">Read Book</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <!-- <a href="pdf_books/Responsive Web Design with HTML5 and CSS Develop future-proof responsive websites using the latest HTML5 and CSS techniques (Ben Frain) (z-lib.org).pdf" target="blank" class="fas fa-eye"></a> -->
+                </div>
+                <div class="image">
+                    <img src="image2/web_design.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>Web design</h3>
+                    <div class="price"> FREE <span> ₹999</span></div>
+                    <a href="pdf_books/Responsive Web Design with HTML5 and CSS Develop future-proof responsive websites using the latest HTML5 and CSS techniques (Ben Frain) (z-lib.org).pdf" target="blank" class="btn">Read Book</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <!-- <a href="pdf_books/Eloquent_JavaScript_small.pdf" target="blank" class="fas fa-eye"></a> -->
+                </div>
+                <div class="image">
+                    <img src="image2/js.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>JavaScript</h3>
+                    <div class="price"> FREE <span> ₹1499</span></div>
+                    <a href="pdf_books/Eloquent_JavaScript_small.pdf" target="blank" class="btn">Read Book</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <!-- <a href="pdf_books/The Road to learn React Your journey to master plain yet pragmatic React.js (Robin Wieruch) (z-lib.org).pdf" target="blank" class="fas fa-eye"></a> -->
+                </div>
+                <div class="image">
+                    <img src="image2/react_js.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>React JS</h3>
+                    <div class="price"> FREE <span> ₹1199</span></div>
+                    <a href="pdf_books/The Road to learn React Your journey to master plain yet pragmatic React.js (Robin Wieruch) (z-lib.org).pdf" target="blank" class="btn">Read Book</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <!-- <a href="pdf_books/PHP Programming PHP Crush Course Learn PHP Programming in 4 hours PHP for Beginners (Page Barry.) (z-lib.org).pdf" target="blank" class="fas fa-eye"></a> -->
+                </div>
+                <div class="image">
+                    <img src="image2/php.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>PHP</h3>
+                    <div class="price"> FREE <span> ₹1299</span></div>
+                    <a href="pdf_books/PHP Programming PHP Crush Course Learn PHP Programming in 4 hours PHP for Beginners (Page Barry.) (z-lib.org).pdf" target="blank" class="btn">Read Book</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <!-- <a href="pdf_books/Practical Node.js Building Real-World Scalable Web Apps (Azat Mardan) (z-lib.org).pdf" target="blank" class="fas fa-eye"></a> -->
+                </div>
+                <div class="image">
+                    <img src="image2/node_js.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>Node JS</h3>
+                    <div class="price"> FREE <span> ₹1299</span></div>
+                    <a href="pdf_books/Practical Node.js Building Real-World Scalable Web Apps (Azat Mardan) (z-lib.org).pdf" target="blank" class="btn">Read Book</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <!-- <a href="pdf_books/Android development with kotlin.pdf" target="blank" class="fas fa-eye"></a> -->
+                </div>
+                <div class="image">
+                    <img src="image2/android_dev.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>Kotlin</h3>
+                    <div class="price"> FREE <span> ₹999</span></div>
+                    <a href="pdf_books/Android development with kotlin.pdf" target="blank" class="btn">Read Book</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <!-- <a href="pdf_books/Machine_Language_for_Beginners.pdf" target="blank" class="fas fa-eye"></a> -->
+                </div>
+                <div class="image">
+                    <img src="image2/mach_lng.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>Machine Language</h3>
+                    <div class="price"> FREE <span> ₹1199</span></div>
+                    <a href="pdf_books/Machine_Language_for_Beginners.pdf" target="blank" class="btn">Read Book</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <!-- <a href="pdf_books/how-linux-works-what-every-superuser-should-know-3rd-edition-1718500408-9781718500402-1718500416-9781718500419.pdf" target="blank" class="fas fa-eye"></a> -->
+                </div>
+                <div class="image">
+                    <img src="image2/linux.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>linux</h3>
+                    <div class="price"> FREE <span> ₹999</span></div>
+                    <a href="pdf_books/how-linux-works-what-every-superuser-should-know-3rd-edition-1718500408-9781718500402-1718500416-9781718500419.pdf" target="blank" class="btn">Read Book</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <!-- <a href="pdf_books/CloudComputingTheoryAndPractice.pdf" target="blank" class="fas fa-eye"></a> -->
+                </div>
+                <div class="image">
+                    <img src="image2/cloud_cmputing.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>Cloud Computing</h3>
+                    <div class="price"> FREE <span> ₹1199</span></div>
+                    <a href="pdf_books/CloudComputingTheoryAndPractice.pdf" target="blank" class="btn">Read Book</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <!-- <a href="pdf_books/aws.pdf" target="blank" class="fas fa-eye"></a> -->
+                </div>
+                <div class="image">
+                    <img src="image2/AWS.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>Amazon Web serivces</h3>
+                    <div class="price"> FREE <span> ₹999</span></div>
+                    <a href="pdf_books/aws.pdf" target="blank" class="btn">Read Book</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <!-- <a href="pdf_books/artificial intelligence and machine learning.pdf" target="blank" class="fas fa-eye"></a> -->
+                </div>
+                <div class="image">
+                    <img src="image2/ai.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>Artificial Intelligence</h3>
+                    <div class="price"> FREE <span> ₹1499</span></div>
+                    <a href="pdf_books/artificial intelligence and machine learning.pdf" target="blank" class="btn">Read Book</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-- featured section ends -->
+
+<!-- newsletter section starts -->
+
+<section class="newsletter">
+
+    <form action="">
+        <h3>subscribe for latest updates</h3>
+        <input type="email" name="" placeholder="Enter Your Email" id="" class="box">
+        <input type="submit" value="subscribe" class="btn">
+    </form>
+
+</section>
+
+<!-- newsletter section ends -->
+
+<!-- arrivals section starts  -->
+
+<section class="arrivals" id="arrivals">
+
+    <h1 class="heading"> <span>new arrivals</span> </h1>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <a href="#featured" class="swiper-slide box">
+                <div class="image">
+                    <img src="image2/ai.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>Artificial Intelligence</h3>
+                    <div class="price">FREE <span>₹1499</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#featured" class="swiper-slide box">
+                <div class="image">
+                    <img src="image2/cloud_cmputing.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>Cloud Computing</h3>
+                    <div class="price">FREE <span>₹1299</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#featured" class="swiper-slide box">
+                <div class="image">
+                    <img src="image2/linux.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>Linux</h3>
+                    <div class="price">FREE <span>₹999</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#featured" class="swiper-slide box">
+                <div class="image">
+                    <img src="image2/AWS.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>Amazon Web Services</h3>
+                    <div class="price">FREE <span>₹1199</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#featured" class="swiper-slide box">
+                <div class="image">
+                    <img src="image2/android_dev.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>Kotlin</h3>
+                    <div class="price">FREE <span>₹1299</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <a href="#featured" class="swiper-slide box">
+                <div class="image">
+                    <img src="image2/web_design.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>Web Design</h3>
+                    <div class="price">FREE <span>₹999</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#featured" class="swiper-slide box">
+                <div class="image">
+                    <img src="image2/js.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>JavaScript</h3>
+                    <div class="price">FREE <span>₹1199</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#featured" class="swiper-slide box">
+                <div class="image">
+                    <img src="image2/react_js.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>React JS</h3>
+                    <div class="price">FREE <span>₹1299</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#featured" class="swiper-slide box">
+                <div class="image">
+                    <img src="image2/node_js.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>Node JS</h3>
+                    <div class="price">FREE <span>₹1299</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#featured" class="swiper-slide box">
+                <div class="image">
+                    <img src="image2/php.webp" alt="" class="shade">
+                </div>
+                <div class="content">
+                    <h3>PHP</h3>
+                    <div class="price">FREE <span>₹1199</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- arrivals section ends -->
+
+<!-- deal section starts  -->
+
+<section class="deal">
+
+    <div class="content">
+        <h3>deal of the day</h3>
+        <h1>ALL BOOKS ARE FREE</h1>
+        <p>These books are free for limited amount of time, Students of Technique Polytechnic Institute can read any book of their choice.</p>
+        <a href="#featured" class="btn">read now</a>
+    </div>
+
+    <div class="image">
+        <img src="image2/books_collection_photo.webp" alt="">
+    </div>
+
+</section>
+
+<!-- deal section ends -->
+
+<!-- reviews section starts  -->
+
+<section class="reviews" id="reviews">
+
+    <h1 class="heading"> <span> Teacher's reviews</span> </h1>
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/IMG-20220824-WA0004.jpg" alt="">
+                <h3>Debasish Sir</h3>
+                <p>Very good.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/IMG-20220824-WA0001.jpg" alt="">
+                <h3>Soumali Mam</h3>
+                <p>Perfect.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/IMG-20220824-WA0005.jpg" alt="">
+                <h3>Shibdas Sir</h3>
+                <p>Just Excellent.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/IMG-20220824-WA0003.jpg" alt="">
+                <h3>Sohan Sir</h3>
+                <p>Good.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    
+</section>
+
+<!-- reviews section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> <span>Latest blogs</span> </h1>
+
+    <div class="swiper blogs-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/smart-home-superstorm.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Smart Home</h3>
+                    <p>When it comes to conveniences in your home, digital assistance like voice commands are the new norm. From Ring doorbells to Nest thermostats and lights that just seem to know when you need them, smart homes have become a reality.</p>
+                    <a href="https://www.superstormrestoration.com/blog/you-may-have-a-smart-home---but-are-you-a-smart-homeowner" target="blank" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/Can-Elon-Musk-Make-Us-Smarter-with-Brain-Chips-Feature.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Neuralink</h3>
+                    <p>Neuralink is Musk's neural interface technology company. Simply put, it is building technology that could be embedded in a person's brain, where it could both record brain activity and potentially stimulate it.</p>
+                    <a href="https://www.businessinsider.in/tech/news/everything-you-need-to-know-about-neuralink-elon-muskaposs-company-that-wants-to-put-microchips-in-peopleaposs-brains/slidelist/81233667.cms" target="blank" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/the-internet.webp" alt="">
+                </div>
+                <div class="content">
+                    <h3>development of Internet</h3>
+                    <p>Asia-Pacific Internet organizations and the Internet Society today announced the signing of a joint Memorandum of Understanding (MoU) to strengthen and support the development of Internet Exchange Points (IXPs) in Asia-Pacific.</p>
+                    <a href="https://www.internetsociety.org/news/press-releases/2022/leading-internet-organizations-partner-to-transform-internet-access-in-asia-pacific-region/" target="blank" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/What’s the Difference Between 5G vs. 5G UW vs. 5G UC1654273675413882.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Growing 5G</h3>
+                    <p>5G is the 5th generation of wireless mobile networks. 5G will be connecting everyone and everything which will provide ultra fast speeds along with low latency and more capacity. Finally, 5G will soon be launched and in over 60 countries.</p>
+                    <a href="https://www.qualcomm.com/5g/what-is-5g" target="blank" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/Web-3.0-1000x450.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Web 3.0</h3>
+                    <p>Web 3.0 is built on the underlying layers of blockchain technology and “edge computing,” which will see the data being mainly owned and managed by internet users. This latest iteration is also set to enable more direct and live interaction with websites.</p>
+                    <a href="https://bloggingguide.com/web3-blogging-platforms/" target="blank" class="btn">read more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>our locations</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> russia </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> france </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> japan </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> africa </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> featured </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> arrivals </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> reviews </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> account info </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> ordered items </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> payment method </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i>+91 8697711380 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> biswa24062001@gmail.com </a>
+            <img src="image/worldmap.png" class="map" alt="">
+        </div>
+        
+    </div>
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="credit"> created by <span>Biswajit Yadav</span> | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- loader  -->
+
+<div class="loader-container">
+    <img src="image2/loading-6.gif" alt="">
+</div>
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
