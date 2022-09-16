@@ -81,7 +81,24 @@ section{
     font-weight: 500;
 }
 
+.login-btn{
+    margin-top: 1rem;
+    display:inline-block;
+    padding:.9rem 3rem;
+    border-radius: .5rem;
+    color:#fff;
+    background:var(--blue);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+    width: 100%;
+}
+
 .btn:hover{
+    background:var(--dark-color);
+}
+
+.login-btn:hover{
     background:var(--dark-color);
 }
 
@@ -212,7 +229,7 @@ section{
     right:0;
 }
 
-.login-form-container form{
+.login-form-container div{
     background:#fff;
     border:var(--border);
     width:40rem;
@@ -222,20 +239,20 @@ section{
     margin:2rem;
 }
 
-.login-form-container form h3{
+.login-form-container div h3{
     font-size: 2.5rem;
     text-transform: uppercase;
     color:var(--black);
     text-align: center;
 }
 
-.login-form-container form span{
+.login-form-container div span{
     display: block;
     font-size: 1.5rem;
     padding-top: 1rem;
 }
 
-.login-form-container form .box{
+.login-form-container div .box{
     width: 100%;
     margin:.7rem 0;
     font-size: 1.6rem;
@@ -246,32 +263,32 @@ section{
     text-transform: none;
 }
 
-.login-form-container form .checkbox{
+.login-form-container div .checkbox{
     display:flex;
     align-items: center;
     gap:.5rem;
     padding:1rem 0;
 }
 
-.login-form-container form .checkbox label{
+.login-form-container div .checkbox label{
     font-size: 1.5rem;
     color:var(--light-color);
     cursor: pointer;
 }
 
-.login-form-container form .btn{
+.login-form-container div .btn{
     text-align: center;
     width:100%;
     margin:1.5rem 0;
 }
 
-.login-form-container form p{
+.login-form-container div p{
     padding-top: .8rem;
     color:var(--light-color);
     font-size: 1.5rem;
 }
 
-.login-form-container form p a{
+.login-form-container div p a{
     color:var(--blue);
     text-decoration: underline;
 }
@@ -282,6 +299,7 @@ section{
     font-size: 5rem;
     color:var(--black);
     cursor: pointer;
+    
 }
 
 .home{
