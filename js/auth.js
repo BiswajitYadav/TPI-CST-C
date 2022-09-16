@@ -1,20 +1,99 @@
- // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyAIY1h6OJUobVMg6jn8dnL19Z2aPPK2DME",
-    authDomain: "cst-e-library.firebaseapp.com",
-    projectId: "cst-e-library",
-    storageBucket: "cst-e-library.appspot.com",
-    messagingSenderId: "900296307418",
-    appId: "1:900296307418:web:6ae8ab883fd82ec820abe3",
-    measurementId: "G-7HW64ZYWC5"
+const firebaseConfig = {
+  apiKey: "AIzaSyAIY1h6OJUobVMg6jn8dnL19Z2aPPK2DME",
+  authDomain: "cst-e-library.firebaseapp.com",
+  projectId: "cst-e-library",
+  storageBucket: "cst-e-library.appspot.com",
+  messagingSenderId: "900296307418",
+  appId: "1:900296307418:web:6ae8ab883fd82ec820abe3",
+  measurementId: "G-7HW64ZYWC5"
+}
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+
+
+//Email login function 
+firebase.auth().onAuthStateChanged(function (user) {
+  if (user) {
+    // User is signed in.
+
+    document.getElementById("logout-btn").style.display = "block";
+    document.getElementById("login-btn").style.display = "none";
+
+    document.getElementById("auth-form").style.display = "none";
+
+    var user = firebase.auth().currentUser;
+
+    if (user != null) {
+
+      var email_id = user.email;
+      document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
+
+    }
+
+  } else {
+    // No user is signed in.
+
+    document.getElementById("logout-btn").style.display = "none";
+    document.getElementById("login-btn").style.display = "block";
+    document.getElementById("auht-form").style.display = "initial";
+
+  }
+});
+
+
+
+function signup() {
+  // New user signup here.
+  var userEmail = document.getElementById("email_field").value;
+  var userPass = document.getElementById("password_field").value;
+
+  firebase.auth().createUserWithEmailAndPassword(userEmail, userPass).catch(function (error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+
+    window.alert("Error : " + errorMessage);
+
+
+  });
+
+}
+
+
+
+
+function login() {
+
+  var userEmail = document.getElementById("email_field").value;
+  var userPass = document.getElementById("password_field").value;
+
+  firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function (error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+
+    window.alert("Error : " + errorMessage);
+  });
+
+}
+
+
+function logout() {
+  firebase.auth().signOut();
+  window.location.reload();
+  // const reloadButton = document.querySelector("#logout-btn");
+  // // Reload everything:
+  // function reload() {
+  //   reload = location.reload();
+  // }
+  // // Event listeners for reload
+  // reloadButton.addEventListener("click", reload, false);
+}
+
+
+
+
+
